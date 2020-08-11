@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import * as HomeAction from "../../actions/HomeAction";
-import "./Styles.scss";
+import "./Styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import sigmaLogo from "../../img/sigma-logo.png";
 import sigmaImg from "../../img/sigma-image.png";
