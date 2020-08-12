@@ -20,7 +20,7 @@ export const consultar_departamentos = () => async (dispatch) => {
         
     };
     const respuesta = await axios.get(
-      "https://sigma-studios.s3-us-west-2.amazonaws.com/test/colombia.json",
+        URL+'getStates',
       {
         headers: headers,
       }
