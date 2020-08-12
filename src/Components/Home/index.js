@@ -207,6 +207,7 @@ class Home extends Component {
                 <label style={errors.name?{color:"red"}:{color:"black"}}>Nombre*</label>
                 <input
                   type="text"
+                  maxLength="50"
                   onChange={(e) => this.setState({ name: e.target.value })}
                   placeholder="Pepito de jesus"
                   value={this.state.name}
@@ -215,6 +216,7 @@ class Home extends Component {
                 <label style={errors.email?{color:"red"}:{color:"black"}}>Correo*</label>
                 <input
                   type="email"
+                  maxLength="30"
                   onChange={(e) => this.setState({ email: e.target.value })}
                   placeholder="Pepitodejesus@gmail.com"
                   value={this.state.email}

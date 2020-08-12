@@ -16,7 +16,8 @@ import URL from '../../src/General/url'
 export const consultar_departamentos = () => async (dispatch) => {
   try {
     let headers = {
-      "Content-Type": "application/json",
+        'Content-Type': 'application/x-www-form-urlencoded',
+        
     };
     const respuesta = await axios.get(
       "https://sigma-studios.s3-us-west-2.amazonaws.com/test/colombia.json",
@@ -24,6 +25,8 @@ export const consultar_departamentos = () => async (dispatch) => {
         headers: headers,
       }
     );
+
+    
     const objectJson = respuesta.data;
     let newObjectDepartaments = [];
 
